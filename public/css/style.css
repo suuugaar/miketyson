@@ -1,0 +1,298 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.content {
+  background-image: url('../img/main-logo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.nav-link {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-link::after {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  content: "";
+  opacity: 0;
+  transition: 0.2s ease;
+}
+
+.nav-link:last-child {
+  margin-right: 0;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+}
+
+.nav-link.active::after {
+  opacity: 1;
+}
+
+.main-title {
+  margin-top: 495px;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-size: 35px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0px 0px 5px #b4b2b7, 0px 0px 10px #000000, 0px 0px 10px #b4b2b7,
+    0px 0px 20px #000000;
+}
+
+.form-title {
+  font-size: 40px;
+  margin-top: 320px;
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0px 0px 5px #b4b2b7, 0px 0px 10px #000000, 0px 0px 10px #b4b2b7,
+    0px 0px 20px #000000;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-label {
+  font-size: 20px;
+  color: white;
+  text-shadow: 0px 0px 5px #b4b2b7, 0px 0px 10px #000000, 0px 0px 10px #b4b2b7,
+    0px 0px 20px #000000;
+}
+
+.form-input {
+  border-radius: 10px;
+  height: 35px;
+  width: 50%;
+  border: 2px solid black;
+  font-size: 20px;
+}
+
+.form-btn {
+  width: 200px;
+  font-size: 20px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.695);
+  color: rgba(255, 255, 255, 0.695);
+  background-color: black;
+  transition: all 0.5s;
+}
+
+.form-btn:hover {
+  border: 1px solid white;
+  color: white;
+  text-shadow: 0px 0px 5px #b4b2b7, 0px 0px 10px #000000, 0px 0px 10px #b4b2b7,
+    0px 0px 20px #000000;
+  cursor: pointer;
+}
+
+.regErrMsg {
+  font-size: 25px;
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 5px #b4b2b7, 0px 0px 10px #ff0000, 0px 0px 10px #b4b2b7,
+    0px 0px 20px #f00000;
+}
+
+
+.logErrMsg {
+  font-size: 25px;
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 5px #b4b2b7, 0px 0px 10px #ff0000, 0px 0px 10px #b4b2b7,
+    0px 0px 20px #f00000;
+}
+
+.newfight-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newfight-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0px 0px 5px #b4b2b7, 0px 0px 10px #000000, 0px 0px 10px #b4b2b7,
+    0px 0px 20px #000000;
+}
+
+.addFightForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.addFightForm input {
+  border-radius: 10px;
+  padding-left: 10px;
+  height: 30px;
+  width: 250px;
+  border: 2px solid black;
+  font-size: 12px;
+  color: black;
+}
+
+.addFightForm button {
+  margin-bottom: 20px;
+  width: 250px;
+  font-size: 15px;
+  height: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.695);
+  color: rgba(255, 255, 255, 0.695);
+  background-color: black;
+  transition: all 0.5s;
+}
+
+.addFightForm button:hover {
+  border: 1px solid white;
+  color: white;
+  text-shadow: 0px 0px 5px #b4b2b7, 0px 0px 10px #000000, 0px 0px 10px #b4b2b7,
+    0px 0px 20px #000000;
+  cursor: pointer;
+}
+
+.fightsContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+  padding: 40px;
+}
+
+.fightCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5px;
+  width: 300px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(41, 39, 39);
+  box-shadow: 0px 0px 5px #b4b2b7, 0px 0px 10px #ff0000, 0px 0px 10px #b4b2b7,
+    0px 0px 20px #f00000;
+  margin-bottom: 20px;
+}
+
+.fightCard p {
+  color: white;
+}
+
+.cardBtn {
+  background-color: rgb(186, 3, 3);
+  color: rgb(207, 207, 207);
+  font-size: 12px;
+  padding: 5px 10px;
+  border: 1px solid white;
+  transition: all .5s;
+}
+
+.cardBtn:hover {
+  background-color: red;
+  color: white;
+}
+
+.btn-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.errNewFight {
+  color: white;
+  text-shadow: 0px 0px 5px #b4b2b7, 0px 0px 10px #ff0000, 0px 0px 10px #b4b2b7,
+    0px 0px 20px #f00000;
+}
+
+.weather-wrapper {
+  margin-top: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.getData {
+  width: 350px;
+  font-size: 25px;
+  height: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.695);
+  color: rgba(255, 255, 255, 0.695);
+  background-color: black;
+  transition: all 0.5s;
+}
+
+.getData:hover {
+  border: 2px solid white;
+  color: white;
+  text-shadow: 0px 0px 5px #b4b2b7, 0px 0px 10px #000000, 0px 0px 10px #b4b2b7,
+    0px 0px 20px #000000;
+  cursor: pointer;
+}
+
+.weather-container {
+  font-size: 30px;
+  margin-top: 20px;
+  color: white;
+  text-shadow: 0px 0px 5px #b4b2b7, 0px 0px 10px #ff0000, 0px 0px 10px #b4b2b7,
+    0px 0px 20px #f00000;
+}
